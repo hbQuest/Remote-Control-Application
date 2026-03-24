@@ -1,6 +1,6 @@
 # **🖥️ Remote Control Center**
 
-**Remote Control Center** là một công cụ quản trị hệ thống và điều khiển máy tính từ xa chuyên biệt cho mạng nội bộ (LAN) sử dụng giao thức TCP/IP. Dự án được xây dựng bằng Python, áp dụng kiến trúc Client-Server đa luồng (Multi-threading) kết hợp với giao diện người dùng hiện đại (Fluent Design) thông qua thư viện CustomTkinter.
+**Remote Control Application** là một công cụ quản trị hệ thống và điều khiển máy tính từ xa chuyên biệt cho mạng nội bộ (LAN) sử dụng giao thức TCP/IP. Dự án được xây dựng bằng Python, áp dụng kiến trúc Client-Server đa luồng (Multi-threading) kết hợp với giao diện người dùng hiện đại (Fluent Design) thông qua thư viện CustomTkinter.
 
 Điểm nổi bật của dự án là khả năng **Multi-session** (điều khiển nhiều PC cùng lúc trên các Tab độc lập) và cơ chế **Tường lửa động (Dynamic Firewall)** giúp đảm bảo an toàn thông tin tối đa.
 
@@ -42,7 +42,13 @@
 
 Mở Terminal/CMD và chạy lệnh sau để cài đặt các thư viện cần thiết:
 
-pip install customtkinter opencv-python pillow pynput
+```cmd
+pip install customtkinter opencv-python pillow pynput```
+
+hoặc
+
+```cmd
+python -m pip install customtkinter opencv-python pillow pynput```
 
 ### **3\. Cách chạy ứng dụng**
 
@@ -54,7 +60,7 @@ pip install customtkinter opencv-python pillow pynput
 
 **Tại máy Quản trị (Client):**
 
-1. Chạy file app.py (hoặc remote\_client\_modern.py).  
+1. Chạy file client.py.  
 2. Nhập IP của máy trạm vào ô kết nối và nhấn **Connect**.  
 3. Chọn các chức năng trên lưới Menu để bắt đầu điều khiển. Có thể nhấn **"Add PC"** để điều khiển thêm máy khác.
 
